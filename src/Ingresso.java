@@ -1,7 +1,8 @@
-package tests;
+
 
 public class Ingresso {
-	/**
+	/**	
+	 *	Terça-Feira: - 15% idosos e crianças; - 5% estudantes;
 	*	Quarta-Feira: - 40% idosos - 30% crianças - 50% estudantes
 	*	Quinta-Feira - 30% idosos e estudantes
 	*	Sexta-Feira - 11% crianças
@@ -23,13 +24,6 @@ public class Ingresso {
 			return valor - (valor * 0.10);
 		
 		if (diaDaSemana.equals("terca-feira") && tipoDeUsuario.equals("crianca"))
-			return valor - (valor * 0.15);
-		
-		if (diaDaSemana.equals("terca-feira") && tipoDeUsuario.equals("idoso"))
-			return valor - (valor * 0.15);
-		
-
-		if (diaDaSemana.equals("terca-feira") && tipoDeUsuario.equals("estudante"))
 			return valor - (valor * 0.15);
 		
 		return 0.00;
